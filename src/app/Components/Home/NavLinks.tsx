@@ -6,7 +6,10 @@ const NavLinks = ({ category }: { category: categoryType }) => {
   return (
     <>
       <li className="list-none">
-        <Link className="text-base" href={`${category.slug}`}>
+        <Link
+          className="text-base hover:text-[#EF1D20]"
+          href={`${category.slug}`}
+        >
           {category.title}
         </Link>
       </li>
